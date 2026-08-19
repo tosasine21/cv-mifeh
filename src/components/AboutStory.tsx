@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import freud from "@/assets/freud.jpg.asset.json";
-import mozog from "@/assets/mozog.png.asset.json";
+import freud from "@/assets/freud.jpg";
+import mozog from "@/assets/mozog.png";
 
 type Scene = {
   id: string;
@@ -144,21 +144,6 @@ const SCENES: Scene[] = [
       </>
     ),
   },
-  {
-    id: "s8",
-    label: "Kam smerujem",
-    milestone: "Dnes a ďalej",
-    body: (
-      <>
-        <p className="story-q story-q-big">
-          Hľadám pozíciu, kde tieto skúsenosti a moje nastavenie premením na reálne výsledky.
-        </p>
-        <p>
-          {"\n"}
-        </p>
-      </>
-    ),
-  },
 ];
 
 
@@ -168,7 +153,7 @@ function Visual({ kind }: { kind: Scene["visual"] }) {
     const small = kind === "circle";
     return (
       <figure className={`ink-plate${small ? " ink-plate-sm" : ""}`}>
-        <img src={freud.url} alt="Archívna fotografia Sigmunda Freuda" loading="lazy" />
+        <img src={freud} alt="Archívna fotografia Sigmunda Freuda" loading="lazy" />
         <svg className="ink-scribble" viewBox="0 0 200 120" aria-hidden="true">
           <path d="M8 96 C40 70 62 104 96 78" />
           <path d="M20 110 C58 96 74 114 120 100" />
@@ -194,7 +179,7 @@ function Visual({ kind }: { kind: Scene["visual"] }) {
   if (kind === "psy") {
     return (
       <figure className="ink-plate ink-plate-brain">
-        <img src={mozog.url} alt="Kreslený mozog" loading="lazy" />
+        <img src={mozog} alt="Kreslený mozog" loading="lazy" />
       </figure>
     );
   }

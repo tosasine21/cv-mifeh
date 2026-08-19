@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import michaela from "@/assets/michaela.png.asset.json";
-import certDM from "@/assets/cert-digitalny-marketing.png.asset.json";
-import certMK from "@/assets/cert-mistr-komunikace.png.asset.json";
-import certPB from "@/assets/cert-personal-brand-sell-mastery.png.asset.json";
-import artNature from "@/assets/zaujmy-nature.png.asset.json";
-import artGames from "@/assets/zaujmy-games.png.asset.json";
-import artBooks from "@/assets/zaujmy-books.png.asset.json";
-import artSims from "@/assets/zaujmy-sims.png.asset.json";
+import michaela from "@/assets/michaela.png";
+import certDM from "@/assets/cert-digitalny-marketing.png";
+import certMK from "@/assets/cert-mistr-komunikace.png";
+import certPB from "@/assets/cert-personal-brand-sell-mastery.webp";
+import artNature from "@/assets/zaujmy-nature.png";
+import artGames from "@/assets/zaujmy-games.png";
+import artBooks from "@/assets/zaujmy-books.png";
+import artSims from "@/assets/zaujmy-sims.png";
 import AboutStory from "@/components/AboutStory";
 
 export const Route = createFileRoute("/")({
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
           "Performance marketing, PPC, AI workflows a psychológia zákazníka. Otvorená pre juniorné pozície v marketingu.",
       },
       { property: "og:type", content: "profile" },
-      { property: "og:image", content: `https://www.michaela-cv.sk${michaela.url}` },
+      { property: "og:image", content: `https://www.michaela-cv.sk${michaela}` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
@@ -254,7 +254,7 @@ function Index() {
             <span className="float-chip c3">Psychológia</span>
             <span className="float-chip c4">Marketing</span>
             <span className="float-chip c5">Komunikácia</span>
-            <img className="hero-photo" src={michaela.url} alt="Portrét Michaely Fehérovej" />
+            <img className="hero-photo" src={michaela} alt="Portrét Michaely Fehérovej" />
           </div>
         </div>
       </section>
@@ -373,9 +373,9 @@ function Index() {
           </div>
           <div className="cert-grid">
             {[
-              { src: certDM.url, alt: "Certifikát Digitálny marketing", label: "Certifikát: Digitálny marketing" },
-              { src: certMK.url, alt: "Certifikát Mistr komunikace", label: "Certifikát: Mistr komunikace" },
-              { src: certPB.url, alt: "Certifikát Personal Brand Sell Mastery", label: "Certifikát: Personal Brand Sell Mastery" },
+              { src: certDM, alt: "Certifikát Digitálny marketing", label: "Certifikát: Digitálny marketing" },
+              { src: certMK, alt: "Certifikát Mistr komunikace", label: "Certifikát: Mistr komunikace" },
+              { src: certPB, alt: "Certifikát Personal Brand Sell Mastery", label: "Certifikát: Personal Brand Sell Mastery" },
             ].map((c) => (
               <button
                 type="button"
@@ -494,7 +494,7 @@ function Index() {
           <div className="free-grid">
             <div className="free-card card reveal reveal-d1">
               <div className="free-art">
-                <img src={artNature.url} alt="Ilustrácia skalnej rokliny s vodopádom a rebríkom" loading="lazy" width={1024} height={768} />
+                <img src={artNature} alt="Ilustrácia skalnej rokliny s vodopádom a rebríkom" loading="lazy" width={1024} height={768} />
                 <span className="spark spark-1" aria-hidden="true" />
                 <span className="spark spark-2" aria-hidden="true" />
                 <span className="spark spark-3" aria-hidden="true" />
@@ -504,7 +504,7 @@ function Index() {
             </div>
             <div className="free-card card reveal reveal-d2">
               <div className="free-art">
-                <img src={artGames.url} alt="Ilustrácia hracieho stola so spoločenskou hrou" loading="lazy" width={1024} height={768} />
+                <img src={artGames} alt="Ilustrácia hracieho stola so spoločenskou hrou" loading="lazy" width={1024} height={768} />
                 <div className="art-die3d" aria-hidden="true">
                   <div className="die3d">
                     <span className="die-face die-f1" />
@@ -522,7 +522,7 @@ function Index() {
             </div>
             <div className="free-card card reveal reveal-d3">
               <div className="free-art">
-                <img src={artBooks.url} alt="Ilustrácia kôpky kníh s otvorenou knihou" loading="lazy" width={1024} height={768} />
+                <img src={artBooks} alt="Ilustrácia kôpky kníh s otvorenou knihou" loading="lazy" width={1024} height={768} />
                 <span className="spark spark-1" aria-hidden="true" />
                 <span className="spark spark-2" aria-hidden="true" />
               </div>
@@ -534,7 +534,7 @@ function Index() {
             </div>
             <div className="free-card card reveal reveal-d4">
               <div className="free-art">
-                <img src={artSims.url} alt="Ilustrácia postavy pri počítači v izbe s rastlinami" loading="lazy" width={1024} height={768} />
+                <img src={artSims} alt="Ilustrácia postavy pri počítači v izbe s rastlinami" loading="lazy" width={1024} height={768} />
                 <svg className="plumbob" viewBox="0 0 40 60" aria-hidden="true">
                   <polygon points="20,2 34,22 20,58 6,22" fill="#3BE07A" />
                   <polygon points="20,2 34,22 20,58" fill="#12B85A" />
@@ -558,6 +558,9 @@ function Index() {
           <h2 className="line-mask">
             <span>Otvorená pre junior pozície{"\n"}v marketingu</span>
           </h2>
+          <p className="contact-intro">
+            Hľadám pozíciu, kde tieto skúsenosti a moje nastavenie premením na reálne výsledky.
+          </p>
           <div className="cta-row">
             <a className="btn btn-solid" href="mailto:michaela.feherova@gmail.com">
               Napísať e-mail
