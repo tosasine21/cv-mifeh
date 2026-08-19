@@ -564,6 +564,9 @@ function Index() {
             <a className="btn btn-solid" href="mailto:michaela.feherova@gmail.com">
               Napísať e-mail
             </a>
+            <a className="btn btn-outline-dark" href="/Michaela_Feherova_CV.pdf" download>
+              Stiahnuť CV
+            </a>
           </div>
           <div className="contact-details">
             <a href="mailto:michaela.feherova@gmail.com">michaela.feherova@gmail.com</a>
