@@ -288,7 +288,7 @@ export default function AboutStory() {
         <div className="story-stage">
           <div className="wrap story-head">
             <p className="eyebrow">O mne</p>
-            <h2>Z psychológie ku marketingu</h2>
+            <h2>Od psychológie ku marketingu</h2>
             <p className="story-note">{"\n"}</p>
           </div>
 
