@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
           "Performance marketing, PPC, AI workflows a psychológia zákazníka. Otvorená pre juniorné pozície v marketingu.",
       },
       { property: "og:type", content: "profile" },
-      { property: "og:image", content: `https://www.michaela-cv.sk${michaela}` },
+      { property: "og:image", content: `https://www.feherova.sk${michaela}` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
@@ -443,8 +443,7 @@ function Index() {
                 Aktívne používam AI nástroje ako súčasť bežnej práce, nielen na generovanie textu, ale
                 na tvorbu vlastných workflowov, promptov a agentov. Pracujem s Claude aj ďalšími LLM
                 modelmi, venujem sa prompt engineeringu a učím sa Claude Code. V Higgsfield generujem
-                vizuály, viem prepájať MCP a experimentovala som aj s Marketing Studio a funkciou
-                Supercomputer.
+                vizuály, viem prepájať MCP a experimentovala som aj s Marketing Studio.
               </p>
             </div>
             <div className="skill-card card reveal reveal-d3">
@@ -569,6 +568,9 @@ function Index() {
           <div className="contact-details">
             <a href="mailto:michaela.feherova@gmail.com">michaela.feherova@gmail.com</a>
             <a href="tel:+421904432213">+421 904 432 213</a>
+            <a href="https://www.linkedin.com/in/michaela-feherova/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
             <span>Bratislava/Remote</span>
           </div>
         </div>
