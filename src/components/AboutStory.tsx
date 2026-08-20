@@ -240,11 +240,12 @@ function LoopProcess({ active }: { active: number }) {
 export default function AboutStory() {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [p, setP] = useState(0);
-  const [desktop, setDesktop] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const desktop = !reducedMotion;
 
   useEffect(() => {
-    const mq = window.matchMedia("(min-width: 900px)");
-    const set = () => setDesktop(mq.matches);
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const set = () => setReducedMotion(mq.matches);
     set();
     mq.addEventListener("change", set);
     return () => mq.removeEventListener("change", set);

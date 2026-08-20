@@ -262,7 +262,7 @@ body.cv {
 .hero .lede + .lede { margin-top: 14px; }
 .cta-row { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-photo-wrap { position: relative; display: flex; justify-content: center; }
+.hero-photo-wrap { position: relative; display: flex; justify-content: center; width: min(340px, 80vw); margin: 0 auto; }
 .hero-photo { width: min(340px, 80vw); height: min(340px, 80vw); object-fit: cover; border-radius: 42% 58% 63% 37% / 45% 40% 60% 55%; box-shadow: 0 26px 60px -20px rgba(0,0,0,.55); position: relative; z-index: 1; border: 5px solid rgba(255,255,255,.15); animation: morph 16s ease-in-out infinite; }
 @keyframes morph {
   33% { border-radius: 60% 40% 38% 62% / 52% 60% 40% 48%; }
@@ -275,7 +275,9 @@ body.cv {
 .float-chip.c3 { top: 44%; right: -10%; background: var(--gold); color: #3b2900; animation-delay: 2.4s; }
 .float-chip.c4 { top: 10%; right: -8%; background: var(--violet); color: #fff; animation-delay: 3.6s; }
 .float-chip.c5 { bottom: 30%; left: -6%; background: #ff8c69; color: #fff; animation-delay: 4.8s; }
-@media (max-width: 520px) { .float-chip { display: none; } }
+@media (max-width: 520px) {
+  .float-chip { font-size: 9.5px; padding: 6px 10px; }
+}
 
 .name-reveal { perspective: 700px; }
 .name-reveal .letter { display: inline-block; opacity: 0; transition: opacity .5s ease; transform-style: preserve-3d; backface-visibility: hidden; }
@@ -558,7 +560,7 @@ body.cv {
 .story { background: var(--paper); position: relative; }
 .story-wrap { position: relative; }
 .story-stage {
-  position: sticky; top: 0; height: 100vh; overflow: hidden;
+  position: sticky; top: 0; height: 100vh; height: 100dvh; overflow: hidden;
   display: flex; flex-direction: column; justify-content: center;
   background:
     radial-gradient(80% 60% at 78% 12%, color-mix(in oklab, var(--violet) 7%, transparent), transparent 70%),
@@ -583,7 +585,7 @@ body.cv {
   transition: transform .18s linear;
 }
 .story-scene {
-  flex: 0 0 100vw; width: 100vw; height: 100vh;
+  flex: 0 0 100vw; width: 100vw; height: 100vh; height: 100dvh;
   display: flex; align-items: center; position: relative;
   padding: 150px max(28px, calc((100vw - var(--max)) / 2 + 28px)) 150px;
 }
@@ -737,25 +739,34 @@ body.cv {
 .tl-mark.now em { opacity: 1; color: var(--coral); }
 
 @media (max-width: 899px) {
-  .story-wrap { height: auto !important; }
-  .story-stage { position: static; height: auto; overflow: visible; padding: 72px 0 30px; }
-  .story-head { position: static; margin-bottom: 8px; }
-  .story-track { flex-direction: column; width: 100% !important; transform: none !important; }
+  .story-head { top: 20px; }
   .story-scene {
-    flex: none; width: 100%; height: auto; padding: 44px 28px;
-    border-top: 1px solid var(--line);
+    padding: 130px 20px 96px;
+    align-items: flex-start;
+    overflow: hidden;
   }
-  .scene-inner { grid-template-columns: 1fr; gap: 26px; }
-  .scene-text > * { opacity: 1; transform: none; }
-  .scene-text h3 { font-size: 1.45rem; max-width: none; }
-  .scene-text p { max-width: none; }
+  .scene-inner { grid-template-columns: 1fr; gap: 14px; }
+  .scene-text h3 { font-size: 1.3rem; margin: 6px 0 10px; max-width: none; }
+  .scene-text p { max-width: none; font-size: .93rem; line-height: 1.5; margin: 0 0 8px; }
+  .scene-sub { margin-bottom: 12px; }
+  .story-q { margin-top: 16px !important; }
   .scene-index { display: none; }
-  .loop-step { opacity: 1; transform: none; }
-  .story-timeline { position: static; padding: 28px; }
-  .tl-marks { flex-wrap: wrap; gap: 12px; justify-content: flex-start; }
-  .tl-mark { flex: 0 0 auto; flex-direction: row; gap: 7px; }
-  .tl-mark em { opacity: .55; }
-  .ink-svg { max-width: 260px; }
+  .story-timeline { padding: 0 20px; bottom: 26px; }
+  .tl-marks { gap: 4px; }
+  .tl-mark em { font-size: 8px; letter-spacing: .06em; }
+  .ink-svg { max-width: 170px; }
+  .ink-plate { width: min(160px, 60%); padding: 10px 10px 26px; }
+  .ink-plate-brain { width: min(190px, 75%); }
+  .ink-plate figcaption { font-size: 8.5px; }
+}
+@media (max-width: 520px) {
+  .story-scene { padding: 118px 16px 88px; }
+  .scene-inner { gap: 10px; }
+  .scene-text h3 { font-size: 1.15rem; }
+  .scene-text p { font-size: .88rem; line-height: 1.48; }
+  .story-q-big { font-size: 1.1rem; }
+  .ink-plate { width: min(140px, 55%); }
+  .ink-plate-brain { width: min(170px, 70%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .story-track, .scene-visual, .tl-fill { transition: none !important; }
