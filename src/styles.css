@@ -582,7 +582,6 @@ body.cv {
 .story-track {
   display: flex; position: relative; z-index: 2;
   will-change: transform;
-  transition: transform .18s linear;
 }
 .story-scene {
   flex: 0 0 100vw; width: 100vw; height: 100vh; height: 100dvh;
@@ -597,7 +596,6 @@ body.cv {
 .scene-text > * {
   opacity: calc(.15 + .85 * var(--near, 1));
   transform: translateY(calc((1 - var(--near, 1)) * 22px));
-  transition: opacity .5s ease, transform .6s cubic-bezier(.22,1,.36,1);
 }
 .scene-label {
   font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .16em;
@@ -625,7 +623,7 @@ body.cv {
   font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .2em;
   opacity: .28;
 }
-.scene-visual { will-change: transform; transition: transform .25s linear; }
+.scene-visual { will-change: transform; }
 
 /* ink visuals */
 .ink-svg { width: 100%; max-width: 380px; height: auto; }

@@ -558,7 +558,7 @@ function Index() {
             <span>Otvorená pre junior pozície{"\n"}v marketingu</span>
           </h2>
           <p className="contact-intro">
-            Hľadám pozíciu, kde tieto vedomosti a moje nastavenie premením na praktické skúsenosti.
+            Hľadám pozíciu, kde tieto vedomosti rozšírim a premením na praktické skúsenosti.
           </p>
           <div className="cta-row">
             <a className="btn btn-solid" href="mailto:michaela.feherova@gmail.com">
