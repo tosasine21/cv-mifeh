@@ -53,7 +53,8 @@ const SCENES: Scene[] = [
           <br />
           <span className="h3-sub">Bola som prvá pod čiarou.</span>
         </h3>
-        <p>Na prijatie na psychológiu som sa prvýkrát nedostala. Chýbal mi jeden bod.</p>
+        <p>Na prijatie na psychológiu som sa prvýkrát nedostala.</p>
+        <p>Chýbal mi jeden bod.</p>
         <p>Skúsila som to znova. A tentoraz som sa na štúdium dostala.</p>
         <p className="story-note">
           Táto skúsenosť mi ukázala, že keď mi na niečom záleží, neodradí ma jeden neúspešný pokus.
@@ -100,9 +101,10 @@ const SCENES: Scene[] = [
     body: (
       <>
         <h3>Prečo marketing?</h3>
+        <p>K marketingu som sa prvýkrát dostala cez krátky online kurz.</p>
         <p>
-          K marketingu som sa prvýkrát dostala cez krátky online kurz. Už vtedy som mala pocit, že
-          som narazila na niečo, čo ma prirodzene baví a chcem tomu viac rozumieť.
+          Už vtedy som mala pocit, že som narazila na niečo, čo ma prirodzene baví a chcem tomu
+          viac rozumieť.
         </p>
         <p>
           Postupne som v marketingu našla spojenie oblastí, ktoré ma zaujímajú najviac:{" "}

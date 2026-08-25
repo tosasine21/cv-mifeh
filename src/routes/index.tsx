@@ -185,27 +185,27 @@ const STRENGTHS = [
   {
     title: "Strategic",
     sub: "Strategické myslenie",
-    text: "Rýchlo vidím vzory a súvislosti tam, kde iní vidia iba komplexnosť, a viem si predstaviť viacero ciest vpred, kým si vyberiem tú najúčinnejšiu.",
+    text: ["Rýchlo vidím vzory a súvislosti tam, kde iní vidia iba komplexnosť, a viem si predstaviť viacero ciest vpred, kým si vyberiem tú najúčinnejšiu."],
   },
   {
     title: "Relator",
     sub: "Vzťahy do hĺbky",
-    text: "Pomáha mi to budovať dôveru a dobré vzťahy – v tíme aj so zákazníkmi. Záleží mi na tom, aby som veciam a ľuďom hlbšie porozumela.",
+    text: ["Pomáha mi to budovať dôveru a dobré vzťahy – v tíme aj so zákazníkmi. Záleží mi na tom, aby som veciam a ľuďom hlbšie porozumela."],
   },
   {
     title: "Learner",
     sub: "Neustále učenie",
-    text: "Samotný proces učenia ma poháňa viac než výsledok, preto si priebežne dopĺňam certifikácie\u00A0\na nové nástroje.",
+    text: ["Samotný proces učenia ma poháňa viac než výsledok, preto si priebežne dopĺňam certifikácie.", "A nové nástroje."],
   },
   {
     title: "Intellection",
     sub: "Hĺbka premýšľania",
-    text: "Rada si veci premyslím do detailu, som introspektívna a vyhľadávam priestor na sústredené uvažovanie pred rozhodnutím.",
+    text: ["Rada si veci premyslím do detailu, som introspektívna a vyhľadávam priestor na sústredené uvažovanie pred rozhodnutím."],
   },
   {
     title: "Individualization",
     sub: "Práca s jedinečnosťou",
-    text: "Zaujímajú ma jedinečné vlastnosti každého človeka — to isté prenášam aj do segmentácie\u00A0\na chápania rôznych typov zákazníkov.",
+    text: ["Zaujímajú ma jedinečné vlastnosti každého človeka — to isté prenášam aj do segmentácie.", "A chápania rôznych typov zákazníkov."],
   },
 ];
 
@@ -472,7 +472,9 @@ function Index() {
                   <h3>
                     {s.title} <small>{s.sub}</small>
                   </h3>
-                  <p>{s.text}</p>
+                  {s.text.map((para, pIdx) => (
+                    <p key={pIdx}>{para}</p>
+                  ))}
                 </div>
               </div>
             ))}
