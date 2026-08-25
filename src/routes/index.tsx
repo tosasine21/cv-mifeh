@@ -502,7 +502,7 @@ function Index() {
                 <span className="spark spark-3" aria-hidden="true" />
               </div>
               <h3>Príroda</h3>
-              <p>Najviac ma nabíja čas strávený v prírode, milujem Slovenský raj.</p>
+              <p>Najviac ma dobíja čas v prírode. Milujem hory a najmä Slovenský raj.</p>
             </div>
             <div className="free-card card reveal reveal-d2">
               <div className="free-art">
@@ -520,7 +520,7 @@ function Index() {
                 </div>
               </div>
               <h3>Čas s priateľmi pri hrách</h3>
-              <p>Rada si s priateľmi zahrám spoločenské hry, Ticket to Ride a Dixit mám najradšej.</p>
+              <p>Rada si s priateľmi zahrám Ticket to Ride či Dixit.</p>
             </div>
             <div className="free-card card reveal reveal-d3">
               <div className="free-art">
@@ -529,10 +529,7 @@ function Index() {
                 <span className="spark spark-2" aria-hidden="true" />
               </div>
               <h3>Knihy</h3>
-              <p>
-                Keď si chcem oddýchnuť pri knihe, siahnem najčastejšie po beletrii alebo knihách o
-                sebarozvoji.
-              </p>
+              <p>Milujem príbehy a sebarozvojové knihy.</p>
             </div>
             <div className="free-card card reveal reveal-d4">
               <div className="free-art">
@@ -545,7 +542,9 @@ function Index() {
               </div>
               <h3>The Sims</h3>
               <p>
-                Nezačalo to u mňa v detstve, ale na VŠ. O hre The Sims sa mi podarilo spraviť aj bakalársku prácu,&nbsp; kde som skúmala rozdiely v cieľoch v simulačných hrách a reálnom živote u mladých dospelých.
+                Verili by ste, že som o The Sims napísala bakalársku prácu? Počas štúdia psychológie
+                som skúmala, ako sa líšia životné ciele mladých ľudí v simulovanom svete The Sims a v
+                reálnom živote.
               </p>
             </div>
           </div>
