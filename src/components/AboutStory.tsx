@@ -7,7 +7,7 @@ type Scene = {
   label: string;
   sub?: string;
   milestone: string;
-  visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "digital" | "loop" | "circle";
+  visual?: "freud" | "point" | "psy" | "phone" | "merge" | "digital" | "loop" | "circle";
   body: React.ReactNode;
 };
 
@@ -116,13 +116,10 @@ const SCENES: Scene[] = [
     label: "Prax",
     sub: "IKEA Bratislava",
     milestone: "Prax",
-    visual: "ikea",
+    visual: "phone",
     body: (
       <>
-        <div className="scene-heading-row">
-          <h3>Dešifrovanie zákazníckych problémov</h3>
-          <IkeaScrew />
-        </div>
+        <h3>Dešifrovanie zákazníckych problémov</h3>
         <p>
           V IKEA som zistila, že naozaj neexistuje nič také ako „bežná zákaznícka otázka“.
         </p>
@@ -217,18 +214,12 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
       </figure>
     );
   }
-  if (kind === "ikea") {
+  if (kind === "phone") {
     return (
       <svg className="ink-svg" viewBox="0 0 260 200" aria-hidden="true">
-        <path className="ink-line ink-tool" d="M52,42 C95,55 128,132 208,152" />
-        <polygon
-          className="ink-line"
-          points="52,31 60.8,36 60.8,46 52,51 43.2,46 43.2,36"
-        />
-        <polygon
-          className="ink-line"
-          points="208,141 216.8,146 216.8,156 208,161 199.2,156 199.2,146"
-        />
+        <path className="ink-line ink-tool" d="M60,55 C100,65 140,110 200,135" />
+        <circle className="ink-line" cx="60" cy="55" r="14" />
+        <circle className="ink-line" cx="200" cy="135" r="14" />
       </svg>
     );
   }
@@ -259,24 +250,6 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
     );
   }
   return null;
-}
-
-function IkeaScrew() {
-  return (
-    <svg className="ikea-screw" viewBox="0 0 60 100" aria-hidden="true">
-      <g className="ikea-screw-rotate">
-        <circle className="screw-head" cx="30" cy="14" r="11" />
-        <path className="screw-highlight" d="M20.5 9 A11 11 0 0 1 30 3" />
-        <line className="screw-slot" x1="22" y1="14" x2="38" y2="14" />
-        <line className="screw-shaft" x1="30" y1="25" x2="30" y2="87" />
-        <path
-          className="screw-thread"
-          d="M24 33 L36 39 M24 45 L36 51 M24 57 L36 63 M24 69 L36 75"
-        />
-        <path className="screw-point" d="M24 87 L30 98 L36 87" />
-      </g>
-    </svg>
-  );
 }
 
 const LOOP = ["Štruktúra", "Jasná hypotéza", "Test", "Vyhodnotenie", "OPAKOVANIE\n"];
