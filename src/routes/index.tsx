@@ -308,7 +308,7 @@ function Index() {
               </div>
               <div className="edu-entry edu-entry-upcoming">
                 <div className="school">PPC Masterclass</div>
-                <div className="meta">Digitálna univerzita · 10/2026</div>
+                <div className="meta">Digitálna univerzita · 11/2026</div>
                 <div className="detail">Idem sa zlepšovať.</div>
               </div>
             </div>
