@@ -40,7 +40,11 @@ const SCENES: Scene[] = [
     visual: "point",
     body: (
       <>
-        <h3>Chýbal mi jediný bod. Bola som prvá pod čiarou.</h3>
+        <h3>
+          Chýbal mi jediný bod.
+          <br />
+          <span className="h3-sub">Bola som prvá pod čiarou.</span>
+        </h3>
         <p>Na prijatie na psychológiu som sa prvýkrát nedostala. Chýbal mi jeden bod.</p>
         <p>Skúsila som to znova. A tentoraz som sa na štúdium dostala.</p>
         <p className="story-note">
