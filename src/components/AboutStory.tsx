@@ -26,16 +26,16 @@ const SCENES: Scene[] = [
           na strednej škole.
         </h3>
         <p>
-          Na hodine sme rozoberali Freuda a fascinovalo ma, že za tým, čo človek robí a ako sa
+          Na hodine sme rozoberali Freuda a fascinovalo ma, že za tým, čo človek robí a ako sa
           správa, je oveľa viac, než je na prvý pohľad viditeľné.
         </p>
         <p className="story-q">Prečo sa ľudia správajú tak, ako sa správajú?</p>
         <p>
-          Čo ovplyvňuje ich rozhodnutia, presvedčenia a postoje? Prečo dvaja ľudia reagujú na rovnakú
+          Čo ovplyvňuje ich rozhodnutia, presvedčenia a postoje? Prečo dvaja ľudia reagujú na rovnakú
           situáciu úplne inak?
         </p>
         <p className="story-note">
-          Práve tieto otázky vo mne vzbudili zvedavosť a priviedli ma k rozhodnutiu študovať
+          Práve tieto otázky vo mne vzbudili zvedavosť a priviedli ma k rozhodnutiu študovať
           psychológiu.
         </p>
       </>
@@ -54,7 +54,7 @@ const SCENES: Scene[] = [
           <span className="h3-sub">Bola som prvá pod čiarou.</span>
         </h3>
         <p>Na prijatie na psychológiu som sa prvýkrát nedostala. Chýbal mi jeden bod.</p>
-        <p>Skúsila som to znova. A tentoraz som sa na štúdium dostala.</p>
+        <p>Skúsila som to znova. A tentoraz som sa na štúdium dostala.</p>
         <p className="story-note">
           Táto skúsenosť mi ukázala, že keď mi na niečom záleží, neodradí ma jeden neúspešný pokus.
         </p>
@@ -72,21 +72,21 @@ const SCENES: Scene[] = [
         <h3>Čo som si odniesla zo štúdia psychológie?</h3>
         <p>
           Štúdium psychológie mi nedalo len odborné znalosti. Najmä vďaka výskumu ma naučilo
-          premýšľať nad problémami v širšom kontexte, pracovať s informáciami a dotiahnuť veci do
+          premýšľať nad problémami v širšom kontexte, pracovať s informáciami a dotiahnuť veci do
           konca. Práve tieto schopnosti dnes prenášam aj do marketingu.
         </p>
         <p className="story-note">
-          <strong>Open-minded prístup</strong> — naučila som sa pozerať na problémy z viacerých
-          perspektív, nespoliehať sa na prvý dojem a vnímať širší kontext.
+          <strong>Open-minded prístup</strong> — naučila som sa pozerať na problémy z viacerých
+          perspektív, nespoliehať sa na prvý dojem a vnímať širší kontext.
         </p>
         <p className="story-note">
-          <strong>Systematické myslenie</strong> — výskum, práca s dátami a odbornou literatúrou ma
-          naučili pracovať štruktúrovane, overovať si informácie a nehľadať len rýchle, povrchné
+          <strong>Systematické myslenie</strong> — výskum, práca s dátami a odbornou literatúrou ma
+          naučili pracovať štruktúrovane, overovať si informácie a nehľadať len rýchle, povrchné
           riešenia.
         </p>
         <p className="story-note">
           <strong>Schopnosť dotiahnuť veci do konca</strong> — výskumná práca ma naučila vydržať pri
-          komplexnej úlohe, pracovať s veľkým množstvom informácií a postupne sa dopracovať k
+          komplexnej úlohe, pracovať s veľkým množstvom informácií a postupne sa dopracovať k
           výsledku.
         </p>
       </>
@@ -101,20 +101,20 @@ const SCENES: Scene[] = [
       <>
         <h3>Prečo marketing?</h3>
         <p>
-          K marketingu som sa prvýkrát dostala cez krátky online kurz. Už vtedy som mala pocit, že
-          som narazila na niečo, čo ma prirodzene baví a chcem tomu viac rozumieť.
+          K marketingu som sa prvýkrát dostala cez krátky online kurz. Už vtedy som mala pocit, že
+          som narazila na niečo, čo ma prirodzene baví a chcem tomu viac rozumieť.
         </p>
         <p>
-          Postupne som v marketingu našla spojenie oblastí, ktoré ma zaujímajú najviac:{" "}
-          <strong>psychológie, kreativity, technológií, dát a neustáleho vzdelávania.</strong>
+          Postupne som v marketingu našla spojenie oblastí, ktoré ma zaujímajú najviac:{" "}
+          <strong>psychológie, kreativity, technológií, dát a neustáleho vzdelávania.</strong>
         </p>
         <p>
-          Psychológia ma naučila všímať si ľudí, ich správanie a súvislosti. Marketing mi k tomu
-          pridal priestor premýšľať, tvoriť, experimentovať a hľadať, čo skutočne funguje.
+          Psychológia ma naučila všímať si ľudí, ich správanie a súvislosti. Marketing mi k tomu
+          pridal priestor premýšľať, tvoriť, experimentovať a hľadať, čo skutočne funguje.
         </p>
         <p className="story-note">
           <strong>Za každou kampaňou vidím človeka.</strong> Baví ma pozerať sa pod povrch, hľadať
-          súvislosti a pochopiť, prečo niečo funguje tak, ako funguje.
+          súvislosti a pochopiť, prečo niečo funguje tak, ako funguje.
         </p>
       </>
     ),
@@ -129,21 +129,20 @@ const SCENES: Scene[] = [
       <>
         <h3>Dešifrovanie zákazníckych problémov</h3>
         <p>
-          V IKEA som zistila, že naozaj neexistuje nič také ako „bežná zákaznícka otázka“.
+          V IKEA som zistila, že naozaj neexistuje nič také ako „bežná zákaznícka otázka“.
         </p>
         <p>
           Napríklad: <strong>„Udrží táto skriňa moje dieťa, keď sa na ňu zavesí?“</strong>
         </p>
         <p>
-          Od stratených súčiastok a reklamácií až po otázky, na ktoré sa odpoveď nedala nájsť v
-          návode. Každú situáciu bolo najskôr potrebné správne pochopiť a potom nájsť riešenie.
+          Od stratených súčiastok a reklamácií až po otázky, na ktoré sa odpoveď nedala nájsť v návode. Každú situáciu bolo najskôr potrebné správne pochopiť a potom nájsť riešenie.
         </p>
         <p className="story-note">
-          Naučila som sa <strong>počúvať, pýtať sa správne otázky a všímať si aj to, čo človek
+          Naučila som sa <strong>počúvať, pýtať sa správne otázky a všímať si aj to, čo človek
           nepovie priamo.</strong>
         </p>
         <p className="story-note">
-          Práve schopnosť dostať sa od otázky k skutočnej potrebe človeka si dnes prenášam aj do
+          Práve schopnosť dostať sa od otázky k skutočnej potrebe človeka si dnes prenášam aj do
           marketingu.
         </p>
       </>
@@ -158,8 +157,7 @@ const SCENES: Scene[] = [
       <>
         <h3>Digitálny marketing · stratégia · AI</h3>
         <p>
-          Aktuálne si rozširujem znalosti v digitálnom marketingu a prepájam strategické myslenie s
-          praktickými nástrojmi.
+          Aktuálne si rozširujem znalosti v digitálnom marketingu a prepájam strategické myslenie s praktickými nástrojmi.
         </p>
       </>
     ),
@@ -222,9 +220,11 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
         viewBox="0 0 260 200"
         aria-hidden="true"
       >
-        <circle className="ink-o o-a" cx="104" cy="82" r="46" />
-        <circle className="ink-o o-b" cx="156" cy="82" r="46" />
-        <circle className="ink-o o-c" cx="130" cy="126" r="46" />
+        <g className="merge-spin">
+          <circle className="ink-o o-a" cx="104" cy="82" r="46" />
+          <circle className="ink-o o-b" cx="156" cy="82" r="46" />
+          <circle className="ink-o o-c" cx="130" cy="126" r="46" />
+        </g>
         <text className="ink-label ink-label-sm" x="130" y="190" textAnchor="middle">
           psychológia · marketing · AI
         </text>

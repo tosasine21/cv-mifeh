@@ -715,6 +715,14 @@ body.cv {
   0% { opacity: 0; transform: translateY(5px); }
   100% { opacity: .45; transform: translateY(0); }
 }
+.merge-spin { transform-box: fill-box; transform-origin: center; }
+.ink-merge.merge-animate .merge-spin {
+  animation: merge-spin 26s linear 3s infinite;
+}
+@keyframes merge-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 @media (prefers-reduced-motion: reduce) {
   .ink-merge.merge-animate .o-a,
   .ink-merge.merge-animate .o-b,
@@ -723,6 +731,7 @@ body.cv {
     animation: none; opacity: .5; transform: none;
   }
   .ink-merge.merge-animate .ink-label-sm { opacity: .45; }
+  .ink-merge.merge-animate .merge-spin { animation: none; }
 }
 
 .ink-plate {

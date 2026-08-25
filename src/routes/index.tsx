@@ -473,7 +473,6 @@ function Index() {
                     {s.title} <small>{s.sub}</small>
                   </h3>
                   <p>{s.text}</p>
-                  {s.note && <p className="note">{s.note}</p>}
                 </div>
               </div>
             ))}
