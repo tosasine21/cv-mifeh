@@ -217,14 +217,15 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
   if (kind === "ikea") {
     return (
       <svg className="ink-svg" viewBox="0 0 260 200" aria-hidden="true">
-        <g transform="translate(-8, 26)">
-          <polygon
-            className="ink-line"
-            points="107,9 116.5,14.5 116.5,25.5 107,31 97.5,25.5 97.5,14.5"
-          />
-          <polygon className="ink-line" points="100,30 114,30 114,130 190,130 190,144 100,144" />
-          <circle className="ink-dot-fill" cx="190" cy="137" r="4" />
-        </g>
+        <path className="ink-line ink-tool" d="M52,42 C95,55 128,132 208,152" />
+        <polygon
+          className="ink-line"
+          points="52,31 60.8,36 60.8,46 52,51 43.2,46 43.2,36"
+        />
+        <polygon
+          className="ink-line"
+          points="208,141 216.8,146 216.8,156 208,161 199.2,156 199.2,146"
+        />
       </svg>
     );
   }
