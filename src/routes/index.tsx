@@ -288,7 +288,12 @@ function Index() {
             <div className="edu-block card reveal reveal-d1">
               <h3>Formálne vzdelanie</h3>
               <div className="edu-entry">
-                <div className="school">Psychológia, Bc.</div>
+                <div className="school">Digitálny marketing: certifikované štúdium</div>
+                <div className="meta">Digitálna univerzita · 130 hodín, 16 celodňových školení</div>
+                <div className="detail">Úlohy, záverečná skúška, certifikát. Ukončené.</div>
+              </div>
+              <div className="edu-entry">
+                <div className="school">Psychológia</div>
                 <div className="meta">
                   Univerzita Pavla Jozefa Šafárika v Košiciach, Katedra psychológie · 2019 – 2024
                 </div>
@@ -301,15 +306,10 @@ function Index() {
                 </div>
                 <div className="detail">Úplné stredné odborné vzdelanie</div>
               </div>
-              <div className="edu-entry">
-                <div className="school">Digitálny marketing: certifikát</div>
-                <div className="meta">Digitálna univerzita · 130 hodín, 16 celodňových školení</div>
-                <div className="detail">Úlohy, záverečná skúška, certifikát. Ukončené.</div>
-              </div>
-              <div className="edu-entry">
+              <div className="edu-entry edu-entry-upcoming">
                 <div className="school">PPC Masterclass</div>
                 <div className="meta">Digitálna univerzita · 10/2026</div>
-                <div className="detail">Pripravujem sa</div>
+                <div className="detail">Idem sa zlepšovať.</div>
               </div>
             </div>
             <div className="edu-block card reveal reveal-d2">
