@@ -306,6 +306,11 @@ function Index() {
                 <div className="meta">Digitálna univerzita · 130 hodín, 16 celodňových školení</div>
                 <div className="detail">Úlohy, záverečná skúška, certifikát. Ukončené.</div>
               </div>
+              <div className="edu-entry">
+                <div className="school">PPC Masterclass</div>
+                <div className="meta">Digitálna univerzita · 10/2026</div>
+                <div className="detail">Pripravujem sa</div>
+              </div>
             </div>
             <div className="edu-block card reveal reveal-d2">
               <h3>Online kurzy</h3>

@@ -40,10 +40,12 @@ const SCENES: Scene[] = [
     visual: "point",
     body: (
       <>
-        <h3>Táto zvedavosť ma prirodzene priviedla k štúdiu psychológie.</h3>
-        <p>Prvý rok mi na prijatie na štúdium chýbal jediný bod.</p>
-        <p>Nevzdala som to, zabojovala{"\u00A0"} som a išla za mojim cieľom.</p>
-
+        <h3>Chýbal mi jediný bod. Bola som prvá pod čiarou.</h3>
+        <p>Na prijatie na psychológiu som sa prvýkrát nedostala. Chýbal mi jeden bod.</p>
+        <p>Skúsila som to znova. A tentoraz som sa na štúdium dostala.</p>
+        <p className="story-note">
+          Táto skúsenosť mi ukázala, že keď mi na niečom záleží, neodradí ma jeden neúspešný pokus.
+        </p>
       </>
     ),
   },
@@ -55,18 +57,25 @@ const SCENES: Scene[] = [
     visual: "psy",
     body: (
       <>
-        <h3>Čo ma naučila vysoká škola?</h3>
+        <h3>Čo som si odniesla zo štúdia psychológie?</h3>
         <p>
-          Počas štúdia a najmä vďaka výskumu som si osvojila veci, ktoré ma formujú dodnes.
+          Štúdium psychológie mi nedalo len odborné znalosti. Najmä vďaka výskumu ma naučilo
+          premýšľať nad problémami v širšom kontexte, pracovať s informáciami a dotiahnuť veci do
+          konca. Práve tieto schopnosti dnes prenášam aj do marketingu.
         </p>
         <p className="story-note">
-          <strong>Open-mind prístup</strong> — schopnosť pozerať sa na problémy bez predsudkov a
-          vnímať kontext.
+          <strong>Open-minded prístup</strong> — naučila som sa pozerať na problémy z viacerých
+          perspektív, nespoliehať sa na prvý dojem a vnímať širší kontext.
         </p>
         <p className="story-note">
-          <strong>Systematické myslenie a dotiahnutie vecí do konca</strong> — práca s dátami,
-          literatúrou a výskumom ma naučila nefungovať len povrchne, ale štruktúrovane doriešiť veci
-          až do konca.
+          <strong>Systematické myslenie</strong> — výskum, práca s dátami a odbornou literatúrou ma
+          naučili pracovať štruktúrovane, overovať si informácie a nehľadať len rýchle, povrchné
+          riešenia.
+        </p>
+        <p className="story-note">
+          <strong>Schopnosť dotiahnuť veci do konca</strong> — výskumná práca ma naučila vydržať pri
+          komplexnej úlohe, pracovať s veľkým množstvom informácií a postupne sa dopracovať k
+          výsledku.
         </p>
       </>
     ),
