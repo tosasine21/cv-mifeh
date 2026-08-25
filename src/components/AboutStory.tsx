@@ -168,7 +168,7 @@ const SCENES: Scene[] = [
 
 
 /* ---------- ink visuals ---------- */
-function Visual({ kind }: { kind: Scene["visual"] }) {
+function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean }) {
   if (kind === "freud" || kind === "circle") {
     const small = kind === "circle";
     return (
@@ -216,12 +216,16 @@ function Visual({ kind }: { kind: Scene["visual"] }) {
   }
   if (kind === "merge") {
     return (
-      <svg className="ink-svg ink-merge" viewBox="0 0 260 200" aria-hidden="true">
+      <svg
+        className={`ink-svg ink-merge${animate ? " merge-animate" : ""}`}
+        viewBox="0 0 260 200"
+        aria-hidden="true"
+      >
         <circle className="ink-o o-a" cx="104" cy="82" r="46" />
         <circle className="ink-o o-b" cx="156" cy="82" r="46" />
         <circle className="ink-o o-c" cx="130" cy="126" r="46" />
         <text className="ink-label ink-label-sm" x="130" y="190" textAnchor="middle">
-          psychológia · kreativita · technológie
+          psychológia · marketing · AI
         </text>
       </svg>
     );
@@ -298,6 +302,12 @@ export default function AboutStory() {
 
   const n = SCENES.length;
   const pos = p * (n - 1);
+  const mergeIndex = SCENES.findIndex((s) => s.visual === "merge");
+  const [mergeAnimated, setMergeAnimated] = useState(false);
+  const activeIndex = Math.round(pos);
+  useEffect(() => {
+    if (desktop && activeIndex === mergeIndex) setMergeAnimated(true);
+  }, [desktop, activeIndex, mergeIndex]);
 
   return (
     <section className="story" id="o-mne">
@@ -353,7 +363,7 @@ export default function AboutStory() {
                             : undefined
                         }
                       >
-                        <Visual kind={s.visual} />
+                        <Visual kind={s.visual} animate={s.visual === "merge" && mergeAnimated} />
                       </div>
                     )}
                   </div>
