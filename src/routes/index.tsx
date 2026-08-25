@@ -196,7 +196,6 @@ const STRENGTHS = [
     title: "Learner",
     sub: "Neustále učenie",
     text: "Samotný proces učenia ma poháňa viac než výsledok, preto si priebežne dopĺňam certifikácie\u00A0\na nové nástroje.",
-    note: "odtiaľ pramení aj tempo, akým sa dostávam do nových AI nástrojov a tech noviniek.",
   },
   {
     title: "Intellection",
