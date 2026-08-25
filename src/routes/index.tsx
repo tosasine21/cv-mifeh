@@ -234,7 +234,7 @@ function Index() {
               Zaujíma ma, čomu ľudia dôverujú a čo ich presvedčí urobiť ďalší krok.
             </p>
             <p className="lede">
-              Som začínajúca marketérka so zameraním na performance marketing, PPC, AI a psychológiu
+              Som junior marketérka so zameraním na performance marketing, AI a psychológiu
               zákazníka. Prepájam porozumenie ľuďom s technológiami, dátami a kreatívnym myslením.
             </p>
             <div className="cta-row">
