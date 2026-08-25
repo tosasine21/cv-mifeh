@@ -9,6 +9,7 @@ type Scene = {
   milestone: string;
   visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "loop" | "circle";
   body: React.ReactNode;
+  footer?: React.ReactNode;
 };
 
 const SCENES: Scene[] = [
@@ -149,13 +150,14 @@ const SCENES: Scene[] = [
     visual: "loop",
     body: (
       <>
-        <h3>PPC · Stratégia · AI</h3>
+        <h3>Digitálny marketing · stratégia · AI</h3>
         <p>
-          Dnes mám za sebou certifikované štúdium na Digitálnej univerzite a cielene sa rozvíjam v
-          marketingovej stratégii a AI nástrojoch.
+          Aktuálne si rozširujem znalosti v digitálnom marketingu a prepájam strategické myslenie s
+          praktickými nástrojmi.
         </p>
       </>
     ),
+    footer: "PPC · sociálne siete · analytika · obsah · AI",
   },
 ];
 
@@ -336,6 +338,7 @@ export default function AboutStory() {
                       {s.sub && <p className="scene-sub">{s.sub}</p>}
                       {s.body}
                       {s.visual === "loop" && <LoopProcess active={desktop ? near : 1} />}
+                      {s.footer && <p className="scene-footer">{s.footer}</p>}
                     </div>
                     {s.visual && s.visual !== "loop" && (
                       <div

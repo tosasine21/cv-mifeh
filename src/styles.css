@@ -614,6 +614,10 @@ body.cv {
 }
 .scene-text p { font-size: .93rem; line-height: 1.5; margin: 0 0 9px; max-width: 46ch; opacity: .85; }
 .scene-text .story-note { font-size: .85rem; line-height: 1.45; opacity: .62; margin: 0 0 9px; }
+.scene-footer {
+  font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .08em;
+  text-transform: uppercase; opacity: .45; margin: 18px 0 0;
+}
 .story-q {
   font-family: "Unbounded", sans-serif; font-weight: 500;
   font-size: clamp(1.05rem, 1.9vw, 1.35rem); line-height: 1.4;
