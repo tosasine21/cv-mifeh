@@ -7,9 +7,9 @@ type Scene = {
   label: string;
   sub?: string;
   milestone: string;
-  visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "loop" | "circle";
+  visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "circle";
   body: React.ReactNode;
-  footer?: React.ReactNode;
+  tags?: string[];
 };
 
 const SCENES: Scene[] = [
@@ -147,7 +147,6 @@ const SCENES: Scene[] = [
     label: "Dnes",
     sub: "Digitálna univerzita · certifikované štúdium",
     milestone: "Dnes",
-    visual: "loop",
     body: (
       <>
         <h3>Digitálny marketing · stratégia · AI</h3>
@@ -157,7 +156,7 @@ const SCENES: Scene[] = [
         </p>
       </>
     ),
-    footer: "PPC · sociálne siete · analytika · obsah · AI",
+    tags: ["PPC", "Sociálne siete", "Analytika", "Obsah", "AI"],
   },
 ];
 
@@ -228,18 +227,16 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
   return null;
 }
 
-const LOOP = ["Štruktúra", "Jasná hypotéza", "Test", "Vyhodnotenie", "OPAKOVANIE\n"];
-
-function LoopProcess({ active }: { active: number }) {
+function TagChips({ tags, active }: { tags: string[]; active: number }) {
   return (
-    <div className="loop-flow" aria-label="Štruktúra, Jasná hypotéza, Test, Vyhodnotenie, Iterácia">
-      {LOOP.map((s, i) => (
+    <div className="tag-flow">
+      {tags.map((t, i) => (
         <span
-          key={s}
-          className={`loop-step${active > 0.45 ? " on" : ""}`}
-          style={{ transitionDelay: `${i * 140}ms` }}
+          key={t}
+          className={`tag-chip${active > 0.45 ? " on" : ""}`}
+          style={{ transitionDelay: `${i * 90}ms` }}
         >
-          {s}
+          {t}
         </span>
       ))}
     </div>
@@ -337,10 +334,9 @@ export default function AboutStory() {
                       <p className="scene-label">{s.label}</p>
                       {s.sub && <p className="scene-sub">{s.sub}</p>}
                       {s.body}
-                      {s.visual === "loop" && <LoopProcess active={desktop ? near : 1} />}
-                      {s.footer && <p className="scene-footer">{s.footer}</p>}
+                      {s.tags && <TagChips tags={s.tags} active={desktop ? near : 1} />}
                     </div>
-                    {s.visual && s.visual !== "loop" && (
+                    {s.visual && (
                       <div
                         className="scene-visual"
                         style={
