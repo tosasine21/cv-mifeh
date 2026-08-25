@@ -89,13 +89,20 @@ const SCENES: Scene[] = [
       <>
         <h3>Prečo marketing?</h3>
         <p>
-          Keď som videla prvý mini marketingový kurz, zažila som "aha moment" a vedela som, že toto chcem robiť.{"\u00A0"}{"\u00A0"}
-          {"\n"}Neskôr som sa naplno dostala k marketingu a našla v ňom kombináciu všetkého, čo ma baví:{"\u00A0"}{"\u00A0"}
-          {"\n"}ľudí · technológií · dát · kreativity · neustáleho vzdelávania.
+          K marketingu som sa prvýkrát dostala cez krátky online kurz. Už vtedy som mala pocit, že
+          som narazila na niečo, čo ma prirodzene baví a chcem tomu viac rozumieť.
+        </p>
+        <p>
+          Postupne som v marketingu našla spojenie oblastí, ktoré ma zaujímajú najviac:{" "}
+          <strong>psychológie, kreativity, technológií, dát a neustáleho vzdelávania.</strong>
+        </p>
+        <p>
+          Psychológia ma naučila všímať si ľudí, ich správanie a súvislosti. Marketing mi k tomu
+          pridal priestor premýšľať, tvoriť, experimentovať a hľadať, čo skutočne funguje.
         </p>
         <p className="story-note">
-          Za každou kampaňou vidím človeka. Moja snaha ísť do hĺbky a hľadať súvislosti tam, kde iní
-          vidia len povrch, ma v učení nových vecí neustále posúva vpred.
+          <strong>Za každou kampaňou vidím človeka.</strong> Baví ma pozerať sa pod povrch, hľadať
+          súvislosti a pochopiť, prečo niečo funguje tak, ako funguje.
         </p>
       </>
     ),
