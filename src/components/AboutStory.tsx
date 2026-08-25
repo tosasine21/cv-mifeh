@@ -7,7 +7,7 @@ type Scene = {
   label: string;
   sub?: string;
   milestone: string;
-  visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "digital" | "loop" | "circle";
+  visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "loop" | "circle";
   body: React.ReactNode;
 };
 
@@ -142,24 +142,6 @@ const SCENES: Scene[] = [
     ),
   },
   {
-    id: "s6",
-    label: "Stratégia",
-    milestone: "Stratégia",
-    visual: "digital",
-    body: (
-      <>
-        <h3>Čo sa dá zlepšiť?{"\u00A0"}</h3>
-        <p>
-          V marketingu ma preto netiahne len tvorba obsahu či nastavovanie nástrojov.
-        </p>
-        <p className="story-q">Prečo človek nakúpi alebo nenakúpi?{"\u00A0"} Prečo odíde zo stránky? Prečo nedokončil nákup?{"\u00A0"}</p>
-        <p className="story-note">
-          Ako sa dá pomocou dát, kreatívy a AI komplexne postaviť riešenie?
-        </p>
-      </>
-    ),
-  },
-  {
     id: "s7",
     label: "Dnes",
     sub: "Digitálna univerzita · certifikované štúdium",
@@ -238,16 +220,6 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
         <text className="ink-label ink-label-sm" x="130" y="190" textAnchor="middle">
           psychológia · marketing · AI
         </text>
-      </svg>
-    );
-  }
-  if (kind === "digital") {
-    return (
-      <svg className="ink-svg" viewBox="0 0 260 200" aria-hidden="true">
-        <rect className="ink-o" x="34" y="36" width="192" height="118" rx="10" />
-        <path className="ink-line ink-faint" d="M34 66 L226 66" />
-        <path className="ink-line" d="M64 128 L100 100 L134 116 L172 74 L200 88" />
-        <circle className="ink-dot-fill" cx="172" cy="74" r="6" />
       </svg>
     );
   }
