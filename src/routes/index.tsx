@@ -441,10 +441,9 @@ function Index() {
               <span className="chip chip-coral">AI a automatizácia</span>
               <h3>Prompt engineering &amp; workflows</h3>
               <p>
-                Aktívne používam AI nástroje ako súčasť bežnej práce, nielen na generovanie textu, ale
-                na tvorbu vlastných workflowov, promptov a agentov. Pracujem s Claude aj ďalšími LLM
-                modelmi, venujem sa prompt engineeringu a učím sa Claude Code. V Higgsfield generujem
-                vizuály, viem prepájať MCP a experimentovala som aj s Marketing Studio.
+                S AI experimentujem každý deň – od prompt engineeringu a práce s LLM nástrojmi až po
+                Claude Code. V Higgsfield ma baví tvorba vizuálov a skúšanie nových nekonečných
+                možností, ktoré AI prináša do kreatívnej práce.
               </p>
             </div>
             <div className="skill-card card reveal reveal-d3">
