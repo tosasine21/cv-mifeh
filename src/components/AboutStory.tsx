@@ -217,7 +217,7 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
     return (
       <svg
         className={`ink-svg ink-merge${animate ? " merge-animate" : ""}`}
-        viewBox="0 0 260 200"
+        viewBox="0 0 260 216"
         aria-hidden="true"
       >
         <g className="merge-spin">
@@ -225,7 +225,7 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
           <circle className="ink-o o-b" cx="156" cy="82" r="46" />
           <circle className="ink-o o-c" cx="130" cy="126" r="46" />
         </g>
-        <text className="ink-label ink-label-sm" x="130" y="190" textAnchor="middle">
+        <text className="ink-label ink-label-sm" x="130" y="206" textAnchor="middle">
           psychológia · marketing · AI
         </text>
       </svg>
