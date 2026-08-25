@@ -26,17 +26,24 @@ const SCENES: Scene[] = [
           na strednej škole.
         </h3>
         <p>
-          Keď sme na hodine rozoberali Freuda, úplne ma to pohltilo a fascinovalo.{"\u00A0"}Prečítala som jeho knihy a išla do hĺbky.
-          {"\n"}{"\u00A0"}Rozhodla som sa ísť študovať psychológiu.
+          Na hodine sme rozoberali Freuda a fascinovalo ma, že za tým, čo človek robí a ako sa
+          správa, je oveľa viac, než je na prvý pohľad viditeľné.
         </p>
-        <p className="story-q">Prečo sa ľudia správajú tak, ako sa správajú?{"\u00A0"}</p>
-        <p className="story-note">Prečo tak konajú? Čo ich vedie k ich presvedčeniam a postojom?</p>
+        <p className="story-q">Prečo sa ľudia správajú tak, ako sa správajú?</p>
+        <p>
+          Čo ovplyvňuje ich rozhodnutia, presvedčenia a postoje? Prečo dvaja ľudia reagujú na rovnakú
+          situáciu úplne inak?
+        </p>
+        <p className="story-note">
+          Práve tieto otázky vo mne vzbudili zvedavosť a priviedli ma k rozhodnutiu študovať
+          psychológiu.
+        </p>
       </>
     ),
   },
   {
     id: "s2",
-    label: "Cieľavedomosť a zodpovednosť",
+    label: "Cieľavedomosť a vytrvalosť",
     milestone: "Jeden bod",
     visual: "point",
     body: (

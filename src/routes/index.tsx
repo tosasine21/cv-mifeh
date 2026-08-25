@@ -307,7 +307,6 @@ function Index() {
               <div className="edu-entry edu-entry-upcoming">
                 <div className="school">PPC Masterclass</div>
                 <div className="meta">Digitálna univerzita · 11/2026</div>
-                <div className="detail">Idem sa zlepšovať.</div>
               </div>
             </div>
             <div className="edu-block card reveal reveal-d2">
@@ -436,7 +435,6 @@ function Index() {
               <p>
                 Google Ads, Meta Ads, GA4, Google Tag Manager, Meta Pixel, základy SEO, nadobudnuté
                 certifikovaným štúdiom na Digitálnej univerzite.
-                {"\n"}Teraz hľadám príležitosť premeniť tieto znalosti na reálnu prax na živých kampaniach.
               </p>
             </div>
             <div className="skill-card card reveal reveal-d2">
