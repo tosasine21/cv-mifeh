@@ -190,7 +190,7 @@ const STRENGTHS = [
   {
     title: "Relator",
     sub: "Vzťahy do hĺbky",
-    text: "Buduje mi to blízke, trvácne vzťahy — v tíme aj so zákazníkom idem do hĺbky.",
+    text: "Pomáha mi to budovať dôveru a dobré vzťahy – v tíme aj so zákazníkmi. Záleží mi na tom, aby som veciam a ľuďom hlbšie porozumela.",
   },
   {
     title: "Learner",
