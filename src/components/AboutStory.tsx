@@ -121,11 +121,22 @@ const SCENES: Scene[] = [
       <>
         <h3>Dešifrovanie zákazníckych problémov</h3>
         <p>
-          V zákazníckej podpore v IKEA Bratislava som si vyskúšala reálne a{"\u00A0"} často komplikované
-          situácie.
+          V IKEA som zistila, že naozaj neexistuje nič také ako „bežná zákaznícka otázka“.
+        </p>
+        <p>
+          Napríklad: <strong>„Udrží táto skriňa moje dieťa, keď sa na ňu zavesí?“</strong>
+        </p>
+        <p>
+          Od stratených súčiastok a reklamácií až po otázky, na ktoré sa odpoveď nedala nájsť v
+          návode. Každú situáciu bolo najskôr potrebné správne pochopiť a potom nájsť riešenie.
         </p>
         <p className="story-note">
-          Naučila som sa aktívne počúvať, hľadať možnosti a riešenia, tak aby bol zákazník spokojný.
+          Naučila som sa <strong>počúvať, pýtať sa správne otázky a všímať si aj to, čo človek
+          nepovie priamo.</strong>
+        </p>
+        <p className="story-note">
+          Práve schopnosť dostať sa od otázky k skutočnej potrebe človeka si dnes prenášam aj do
+          marketingu.
         </p>
       </>
     ),
