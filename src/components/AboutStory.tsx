@@ -119,7 +119,10 @@ const SCENES: Scene[] = [
     visual: "ikea",
     body: (
       <>
-        <h3>Dešifrovanie zákazníckych problémov</h3>
+        <div className="scene-heading-row">
+          <h3>Dešifrovanie zákazníckych problémov</h3>
+          <IkeaScrew />
+        </div>
         <p>
           V IKEA som zistila, že naozaj neexistuje nič také ako „bežná zákaznícka otázka“.
         </p>
@@ -256,6 +259,24 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
     );
   }
   return null;
+}
+
+function IkeaScrew() {
+  return (
+    <svg className="ikea-screw" viewBox="0 0 60 100" aria-hidden="true">
+      <g className="ikea-screw-rotate">
+        <circle className="screw-head" cx="30" cy="14" r="11" />
+        <path className="screw-highlight" d="M20.5 9 A11 11 0 0 1 30 3" />
+        <line className="screw-slot" x1="22" y1="14" x2="38" y2="14" />
+        <line className="screw-shaft" x1="30" y1="25" x2="30" y2="87" />
+        <path
+          className="screw-thread"
+          d="M24 33 L36 39 M24 45 L36 51 M24 57 L36 63 M24 69 L36 75"
+        />
+        <path className="screw-point" d="M24 87 L30 98 L36 87" />
+      </g>
+    </svg>
+  );
 }
 
 const LOOP = ["Štruktúra", "Jasná hypotéza", "Test", "Vyhodnotenie", "OPAKOVANIE\n"];

@@ -612,6 +612,32 @@ body.cv {
 .scene-text h3 .h3-sub {
   display: inline-block; font-size: .6em; font-weight: 500; opacity: .6; margin-top: 4px;
 }
+.scene-heading-row { display: flex; align-items: flex-start; gap: 10px; }
+.scene-heading-row h3 { margin-top: 8px; }
+
+/* decorative IKEA screw illustration */
+.ikea-screw {
+  --screw-size: 30px;
+  --screw-opacity: .6;
+  --screw-rotate: 25deg;
+  width: var(--screw-size); height: auto; flex-shrink: 0;
+  opacity: var(--screw-opacity); margin-top: 14px;
+}
+.ikea-screw-rotate { transform: rotate(var(--screw-rotate)); transform-box: view-box; transform-origin: center; }
+.ikea-screw .screw-head,
+.ikea-screw .screw-slot,
+.ikea-screw .screw-shaft,
+.ikea-screw .screw-thread,
+.ikea-screw .screw-point {
+  fill: none; stroke: var(--violet); stroke-width: 2.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.ikea-screw .screw-highlight {
+  fill: none; stroke: var(--violet-tint); stroke-width: 2; stroke-linecap: round;
+}
+@media (max-width: 520px) {
+  .ikea-screw { --screw-size: 24px; margin-top: 10px; }
+}
 .scene-text p { font-size: .93rem; line-height: 1.5; margin: 0 0 9px; max-width: 46ch; opacity: .85; }
 .scene-text .story-note { font-size: .85rem; line-height: 1.45; opacity: .62; margin: 0 0 9px; }
 .story-q {
