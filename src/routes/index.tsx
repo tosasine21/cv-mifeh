@@ -554,10 +554,10 @@ function Index() {
         <div className="wrap">
           <p className="eyebrow">SPOJME SA</p>
           <h2 className="line-mask">
-            <span>Otvorená pre junior pozície{"\n"}v marketingu</span>
+            <span>Hľadám junior pozíciu{"\n"}v marketingu</span>
           </h2>
           <p className="contact-intro">
-            Hľadám pozíciu, kde tieto vedomosti rozšírim a premením na praktické skúsenosti.
+            Chcem svoje doterajšie znalosti ďalej rozvíjať a premeniť ich na praktické skúsenosti.
           </p>
           <div className="cta-row">
             <a className="btn btn-solid" href="mailto:michaela.feherova@gmail.com">
