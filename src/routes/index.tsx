@@ -323,9 +323,9 @@ function Index() {
                   Digitálci (R. Kiavčin)
                 </li>
                 <li>
-                  <span className="course-title">Majstri sociálnych sietí Pro</span>
+                  <span className="course-title">Viral Flow</span>
                   <br />
-                  Denis Vencel
+                  Devin Jatho
                 </li>
                 <li>
                   <span className="course-title">Digitálna predajná mašina</span>
