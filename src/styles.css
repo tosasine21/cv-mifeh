@@ -636,7 +636,6 @@ body.cv {
 }
 .ink-svg .ink-o { opacity: calc(.12 + .35 * var(--near, 1)); }
 .ink-svg .ink-faint { opacity: .18; }
-.ink-svg .ink-tool { stroke-width: 3.2; }
 .ink-svg .ink-dot-fill { fill: var(--coral); filter: drop-shadow(0 0 0 transparent); }
 .ink-svg .ink-dot-open { fill: var(--paper); stroke: var(--ink); stroke-width: 1.6; }
 .ink-svg .ink-dot-travel {

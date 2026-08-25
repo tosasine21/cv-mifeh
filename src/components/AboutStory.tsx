@@ -7,7 +7,7 @@ type Scene = {
   label: string;
   sub?: string;
   milestone: string;
-  visual?: "freud" | "point" | "psy" | "phone" | "merge" | "digital" | "loop" | "circle";
+  visual?: "freud" | "point" | "psy" | "ikea" | "merge" | "digital" | "loop" | "circle";
   body: React.ReactNode;
 };
 
@@ -116,7 +116,7 @@ const SCENES: Scene[] = [
     label: "Prax",
     sub: "IKEA Bratislava",
     milestone: "Prax",
-    visual: "phone",
+    visual: "ikea",
     body: (
       <>
         <h3>Dešifrovanie zákazníckych problémov</h3>
@@ -214,12 +214,14 @@ function Visual({ kind, animate }: { kind: Scene["visual"]; animate?: boolean })
       </figure>
     );
   }
-  if (kind === "phone") {
+  if (kind === "ikea") {
     return (
       <svg className="ink-svg" viewBox="0 0 260 200" aria-hidden="true">
-        <path className="ink-line ink-tool" d="M60,55 C100,65 140,110 200,135" />
-        <circle className="ink-line" cx="60" cy="55" r="14" />
-        <circle className="ink-line" cx="200" cy="135" r="14" />
+        <path className="ink-line" d="M28 150 C70 150 66 60 118 60" />
+        <path className="ink-line" d="M118 60 C170 60 168 128 232 128" />
+        <circle className="ink-dot-open" cx="28" cy="150" r="8" />
+        <circle className="ink-dot-fill" cx="232" cy="128" r="8" />
+        <path className="ink-line ink-faint" d="M60 178 L200 178" />
       </svg>
     );
   }
