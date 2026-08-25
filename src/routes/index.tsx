@@ -186,7 +186,6 @@ const STRENGTHS = [
     title: "Strategic",
     sub: "Strategické myslenie",
     text: "Rýchlo vidím vzory a súvislosti tam, kde iní vidia iba komplexnosť, a viem si predstaviť viacero ciest vpred, kým si vyberiem tú najúčinnejšiu.",
-    note: "pri kampani ma nezaujíma len „čo spustiť“, ale prečo práve toto",
   },
   {
     title: "Relator",
