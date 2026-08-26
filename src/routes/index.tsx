@@ -286,9 +286,11 @@ function Index() {
             <div className="edu-block card reveal reveal-d1">
               <h3>Formálne vzdelanie</h3>
               <div className="edu-entry">
-                <div className="school">Digitálny marketing: certifikované štúdium</div>
-                <div className="meta">Digitálna univerzita · 130 hodín, 16 celodňových školení</div>
-                <div className="detail">Úlohy, záverečná skúška, certifikát. Ukončené.</div>
+                <div className="school">Sociálno-výchovný pracovník</div>
+                <div className="meta">
+                  Stredná pedagogická škola sv. Cyrila a Metoda v Košiciach · 2011 – 2015
+                </div>
+                <div className="detail">Úplné stredné odborné vzdelanie</div>
               </div>
               <div className="edu-entry">
                 <div className="school">Psychológia</div>
@@ -297,19 +299,20 @@ function Index() {
                 </div>
                 <div className="detail">Ukončené vysokoškolské vzdelanie I. stupňa</div>
               </div>
+            </div>
+            <div className="edu-block card reveal reveal-d2">
+              <h3>Digitálny marketing</h3>
               <div className="edu-entry">
-                <div className="school">Sociálno-výchovný pracovník</div>
-                <div className="meta">
-                  Stredná pedagogická škola sv. Cyrila a Metoda v Košiciach · 2011 – 2015
-                </div>
-                <div className="detail">Úplné stredné odborné vzdelanie</div>
+                <div className="school">Digitálny marketing: certifikované štúdium</div>
+                <div className="meta">Digitálna univerzita · 130 hodín, 16 celodňových školení</div>
+                <div className="detail">Úlohy, záverečná skúška, certifikát. Ukončené.</div>
               </div>
               <div className="edu-entry edu-entry-upcoming">
                 <div className="school">Expert štúdium</div>
                 <div className="meta">Digitálna univerzita · 10/2026</div>
               </div>
             </div>
-            <div className="edu-block card reveal reveal-d2">
+            <div className="edu-block card reveal reveal-d3">
               <h3>Online kurzy</h3>
               <ul className="course-list">
                 <li>
