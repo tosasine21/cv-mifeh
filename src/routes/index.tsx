@@ -305,8 +305,8 @@ function Index() {
                 <div className="detail">Úplné stredné odborné vzdelanie</div>
               </div>
               <div className="edu-entry edu-entry-upcoming">
-                <div className="school">PPC Masterclass</div>
-                <div className="meta">Digitálna univerzita · 10/2026 · Expert štúdium</div>
+                <div className="school">Expert štúdium</div>
+                <div className="meta">Digitálna univerzita · 10/2026</div>
               </div>
             </div>
             <div className="edu-block card reveal reveal-d2">
